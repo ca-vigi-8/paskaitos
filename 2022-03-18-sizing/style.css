@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background: rgb(255, 193, 79);
+  width: 500px;
+
+  /* vh- viewport height - procentinė išraišką skaičiuojant nuo viso matomo ekrano aukščio */
+  min-height: 30vh;
+}
+
+.container h2 {
+  background: rgb(82, 79, 255);
+  margin: 0;
+
+  /* % - procentinė išraiška nuo tėvinio elemento pločio */
+  width: 50%;
+
+  /* vw - viewport width */
+  /* vw - procentinė išraiška skaičiuojant nuo pilno matomo ekrano pločio */
+  /* width: 50vw; */
+}
+
+
+.container {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 1em;
+  padding: 1rem;
+}

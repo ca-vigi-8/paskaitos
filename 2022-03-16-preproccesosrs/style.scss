@@ -1,0 +1,73 @@
+@import "variables";
+@import "container";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.bg-dark {
+  color: $color-white;
+}
+
+.wrapper {
+  padding: $sizing-3;
+  margin-bottom: $sizing-3;
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.half-width {
+    width: 50%;
+  }
+
+  &.bg-dark {
+    background: #424242;
+  }
+
+  h2 {
+    font-size: 40px;
+
+    &.color-red {
+      color: $color-red;
+      cursor: pointer;
+      transition: color 0.5s ease-in-out;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  // p:not(.empty):before {
+  //   content: '- ';
+  //   color: $color-red;
+  // }
+
+  p {
+    font-size: 18px;
+
+    &:not(.empty) {
+      font-size: 16px;
+
+      &:before {
+        content: '- ';
+        color: $color-red;
+      }
+    }
+
+    &:first-of-type {
+      font-size: 1.5em;
+    }
+  }
+
+  .box {
+    border: 2px solid $color-white;
+    padding: $sizing-3;
+    margin-bottom: $sizing-3;
+
+    &.bg-dark {
+      background: $color-black;
+    }
+  }
+}

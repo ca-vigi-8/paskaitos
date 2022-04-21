@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Mobile first pavyzdys */
+/* .container {
+  background: pink;
+}
+
+@media (min-width: 300px) {
+  .container {
+    background: purple;
+    color: white;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    background: green;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding: 20px;
+    width: 70%;
+  }
+} */
+
+/* Orientation pavyzdys */
+/* @media (orientation: portrait) {
+  .container {
+    background: black;
+    color: white;
+  }
+} */
+
+/* Desktop first pavyzdys */
+.container {
+  background: green;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  width: 70%;
+}
+
+@media (max-width: 799px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .container {
+    font-size: 16px;
+    background: purple;
+  }
+}
+
+@media (max-width: 299px) {
+  .container {
+    background: pink;
+    color: black;
+  }
+}

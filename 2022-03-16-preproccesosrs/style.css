@@ -1,0 +1,58 @@
+.container {
+  margin: 30px auto;
+  width: 70%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.bg-dark {
+  color: white;
+}
+
+.wrapper {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.wrapper.full-width {
+  width: 100%;
+}
+.wrapper.half-width {
+  width: 50%;
+}
+.wrapper.bg-dark {
+  background: #424242;
+}
+.wrapper h2 {
+  font-size: 40px;
+}
+.wrapper h2.color-red {
+  color: red;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+.wrapper h2.color-red:hover {
+  color: white;
+}
+.wrapper p {
+  font-size: 18px;
+}
+.wrapper p:not(.empty) {
+  font-size: 16px;
+}
+.wrapper p:not(.empty):before {
+  content: "- ";
+  color: red;
+}
+.wrapper p:first-of-type {
+  font-size: 1.5em;
+}
+.wrapper .box {
+  border: 2px solid white;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.wrapper .box.bg-dark {
+  background: black;
+}/*# sourceMappingURL=style.css.map */

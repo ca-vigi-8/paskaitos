@@ -1,0 +1,118 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.container {
+  padding-right: 20px;
+  padding-left: 15px;
+}
+
+a.bg-image {
+  display: block;
+  background-color: white;
+  background-image: url(banner.jpg);
+  background-position-x: 90%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  font-size: 24px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.filter {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.program {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.program img {
+  width: 90px;
+}
+
+.program .info {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+span.extra-info {
+  background: #ff00e9;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  right: -15px;
+}
+
+.program {
+  position: relative;
+}
+
+@media (min-width: 700px) {
+  .programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  .program {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin-top: 15px;
+    margin-bottom: 700px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    column-gap: 30px;
+    align-items: flex-start;
+  }
+
+  .filter {
+    width: calc(40% - 15px);
+    position: sticky;
+    top: 15px;
+  }
+
+  .programs-list {
+    width: calc(60% - 15px);
+  }
+
+  .program {
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .filter {
+    width: calc((100% - 30px) / 3);
+  }
+  
+  .programs-list {
+    width: calc((100% - 30px) / 3 * 2);
+  }
+
+  .program {
+    width: calc((100% - 30px) / 2);
+  }
+}

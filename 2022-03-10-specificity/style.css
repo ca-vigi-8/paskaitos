@@ -1,0 +1,19 @@
+h1#header-id {
+  color: purple;
+}
+
+#header-id {
+  color: pink;
+}
+
+.header {
+  color: blue;
+}
+
+h1 {
+  color: red;
+}
+
+h1 {
+  color: green !important;
+}

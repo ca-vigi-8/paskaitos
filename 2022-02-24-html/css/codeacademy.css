@@ -1,0 +1,136 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+  margin: 0;
+  margin-bottom: 500px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a.button {
+  text-decoration: none;
+  background: #1200ff;
+  color: white;
+  padding: 13px 30px 11px;
+  display: inline-block;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.main-header {
+  background: white;
+}
+
+.main-header .main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .page-logo {
+  height: 42px;
+}
+
+.main-header .main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .main-navigation .main-menu {
+  padding-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 20px;
+}
+
+.main-header .main-navigation .main-menu li {
+  display: inline-block;
+}
+
+.main-header .main-navigation .main-menu li a {
+  display: block;
+  padding: 15px 10px;
+}
+
+.main-header .main-navigation a.button {
+  margin-left: 20px;
+}
+
+.hero-box {
+  background: black;
+  color: white;
+}
+
+.hero-box .page-title-wrapper {
+  max-width: 670px;
+  margin-left: 100px;
+  padding-top: 90px;
+  padding-bottom: 386px;
+}
+
+.hero-box .page-title-wrapper .page-title {
+  font-size: 100px;
+  margin: 0 0 23px;
+}
+
+.hero-box .page-title-wrapper p {
+  margin: 0;
+}
+
+.hero-box .services-list {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 139px;
+}
+
+.hero-box .services-list .service-item {
+  width: 50%;
+}
+
+.hero-box .services-list .service-item:nth-of-type(odd) {
+  padding-right: 115px;
+}
+
+.hero-box .services-list .service-item:nth-of-type(even) {
+  padding-left: 115px;
+  border-left: 2px solid white;
+}
+
+.facts .section-title-wrapper p {
+  margin-left: 200px;
+}
+
+.facts .facts-list {
+  padding-left: 200px;
+  padding-right: 168px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.facts .facts-list .fact-item {
+  width: 50%;
+  margin-bottom: 88px;
+  font-weight: 700;
+}
+
+.facts .facts-list .fact-item .fact-value {
+  font-size: 100px;
+}
+
+.facts .facts-list .fact-item .fact-value.medium-text {
+  font-size: 72px;
+}

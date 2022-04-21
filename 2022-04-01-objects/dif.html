@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skirtumai tarp innerText ir textContent</title>
+</head>
+<body>
+  
+  <div id="content">
+    <h1>Labas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, inventore. Neque provident ex aut assumenda mollitia, culpa dolores, ad aliquam a porro sint optio necessitatibus, error tempore molestias et accusamus?</p>
+    <span hidden>Paslepta skiltis</span>
+    <script>
+      document.querySelector('h1').style.color = 'red';
+    </script>
+    <style>
+      #content {
+        background-color: green;
+        color: white;
+        padding: 15px;
+      }
+    </style>
+  </div>
+
+
+  <script>
+    let content = document.querySelector('#content');
+
+    console.log(content.textContent);
+    console.log(content.innerText);
+  </script>
+</body>
+</html>
